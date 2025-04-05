@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-fraudbuster-darkBlue text-white py-10">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and description */}
           <div>
             <div className="flex items-center mb-4">
@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
                 <Link to="/" className="text-gray-300 hover:text-white transition">Home</Link>
               </li>
               <li>
-                <Link to="#features" className="text-gray-300 hover:text-white transition">Features</Link>
+                <Link to="/features" className="text-gray-300 hover:text-white transition">Features</Link>
               </li>
               <li>
-                <Link to="#about" className="text-gray-300 hover:text-white transition">About</Link>
+                <Link to="/about" className="text-gray-300 hover:text-white transition">About</Link>
               </li>
               <li>
-                <Link to="#contact" className="text-gray-300 hover:text-white transition">Contact</Link>
+                <Link to="/contact" className="text-gray-300 hover:text-white transition">Contact</Link>
               </li>
             </ul>
           </div>
@@ -51,6 +51,26 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/security" className="text-gray-300 hover:text-white transition">Security</Link>
+              </li>
+              <li>
+                <Link to="/legal" className="text-gray-300 hover:text-white transition">Legal Overview</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2">
+              <li className="text-gray-300">
+                123 Tech Boulevard<br />
+                San Francisco, CA 94105
+              </li>
+              <li>
+                <a href="mailto:info@fraudbuster.com" className="text-gray-300 hover:text-white transition">info@fraudbuster.com</a>
+              </li>
+              <li>
+                <a href="tel:+15551234567" className="text-gray-300 hover:text-white transition">+1 (555) 123-4567</a>
               </li>
             </ul>
           </div>

@@ -10,6 +10,13 @@ import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
 import AdminPanel from "./pages/AdminPanel";
 import NotFound from "./pages/NotFound";
+import Features from "./pages/Features";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Legal from "./pages/legal/Legal";
+import Privacy from "./pages/legal/Privacy";
+import Terms from "./pages/legal/Terms";
+import Security from "./pages/legal/Security";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +31,13 @@ const App = () => (
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/security" element={<Security />} />
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="/admin/fraud-detector" element={<AdminPanel />} />
           <Route path="/admin/reports" element={<AdminPanel />} />
