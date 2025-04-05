@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Shield, Users, Award } from 'lucide-react';
+import { Shield, Users, Award, Calendar, GraduationCap, University } from 'lucide-react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import BusterBot from '@/components/BusterBot';
@@ -185,6 +184,54 @@ const About = () => {
               </div>
             </div>
           </div>
+          
+          {/* University Project Section */}
+          <section className="container mx-auto py-12 bg-gray-50 rounded-xl shadow-md">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold mb-6 text-center text-fraudbuster-darkBlue">
+                About This Project
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Calendar className="w-6 h-6 text-fraudbuster-blue" />
+                    <p className="text-gray-700"><strong>Submitted:</strong> February 2025</p>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <GraduationCap className="w-6 h-6 text-fraudbuster-purple" />
+                    <p className="text-gray-700"><strong>Degree:</strong> BSc (Hons) Software Engineering</p>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <University className="w-6 h-6 text-fraudbuster-pink" />
+                    <p className="text-gray-700"><strong>University:</strong> University of Westminster</p>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <Users className="w-6 h-6 text-blue-500" />
+                    <p className="text-gray-700">
+                      <strong>In Collaboration With:</strong> Informatics Institute of Technology (IIT)
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <p className="text-gray-600 mb-4">
+                    The aim of this project is to develop an Explainable Artificial Intelligence (XAI) system that improves transparency and trust in digital marketing and fraud detection. The focus is on analyzing biases in social media sentiment, providing clear and interpretable insights into how AI makes decisions.
+                  </p>
+                  
+                  <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                    <h3 className="font-bold mb-2 text-fraudbuster-darkBlue">Dissertation Title</h3>
+                    <p className="italic text-gray-700">
+                      "FraudBuster: Developing an Explainable AI Model for Detecting Bias in Social Media Sentiment Analysis"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </main>
 
