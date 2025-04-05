@@ -20,26 +20,87 @@ const About = () => {
             </p>
           </div>
           
-          {/* Our Story */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-fraudbuster-darkBlue">Our Story</h2>
-              <p className="text-gray-600 mb-4">
-                FraudBuster was born out of a simple observation: as digital transactions became more common, so did sophisticated fraud attempts. Traditional rule-based systems weren't keeping up with increasingly clever tactics.
-              </p>
-              <p className="text-gray-600 mb-4">
-                Founded in 2023 by a team of AI researchers and cybersecurity experts, we set out to create a more intelligent approach to fraud detection—one that learns and adapts in real-time.
-              </p>
-              <p className="text-gray-600">
-                Today, FraudBuster helps businesses of all sizes protect themselves and their customers from evolving fraud threats, using advanced AI that explains its reasoning in plain language.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <BusterBot emotion="happy" size="xl" className="drop-shadow-xl" />
+          {/* University Project Section - Featured prominently */}
+          <div className="bg-gradient-to-br from-white to-fraudbuster-blue/10 rounded-3xl p-8 mb-20 shadow-lg border border-fraudbuster-blue/20">
+            <div className="max-w-5xl mx-auto">
+              <div className="flex justify-center mb-8">
+                <BusterBot emotion="happy" size="xl" className="drop-shadow-xl" />
+              </div>
+              
+              <h2 className="text-2xl font-bold mb-6 text-center text-fraudbuster-darkBlue">
+                About This Project
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                <div className="space-y-6 bg-white p-6 rounded-xl shadow-md">
+                  <h3 className="text-xl font-semibold text-fraudbuster-darkBlue border-b pb-2 border-fraudbuster-purple/30">
+                    Project Details
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="bg-fraudbuster-blue/20 p-2 rounded-full">
+                        <Calendar className="w-6 h-6 text-fraudbuster-darkBlue" />
+                      </div>
+                      <p className="text-gray-700"><strong>Submitted:</strong> February 2025</p>
+                    </div>
+                    
+                    <div className="flex items-center space-x-3">
+                      <div className="bg-fraudbuster-purple/20 p-2 rounded-full">
+                        <GraduationCap className="w-6 h-6 text-fraudbuster-darkBlue" />
+                      </div>
+                      <p className="text-gray-700"><strong>Degree:</strong> BSc (Hons) Software Engineering</p>
+                    </div>
+                    
+                    <div className="flex items-center space-x-3">
+                      <div className="bg-fraudbuster-pink/20 p-2 rounded-full">
+                        <University className="w-6 h-6 text-fraudbuster-darkBlue" />
+                      </div>
+                      <p className="text-gray-700"><strong>University:</strong> University of Westminster</p>
+                    </div>
+                    
+                    <div className="flex items-center space-x-3">
+                      <div className="bg-blue-100 p-2 rounded-full">
+                        <Users className="w-6 h-6 text-fraudbuster-darkBlue" />
+                      </div>
+                      <p className="text-gray-700">
+                        <strong>In Collaboration With:</strong> Informatics Institute of Technology (IIT)
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 bg-fraudbuster-darkBlue/5 p-4 rounded-lg border border-fraudbuster-darkBlue/10">
+                    <h3 className="font-bold mb-2 text-fraudbuster-darkBlue">Dissertation By</h3>
+                    <p className="text-gray-700 font-medium">
+                      Thenuk Wijesinghe
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="bg-white p-6 rounded-xl shadow-md">
+                    <h3 className="text-xl font-semibold text-fraudbuster-darkBlue border-b pb-2 border-fraudbuster-purple/30 mb-4">
+                      Project Aim
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      The aim of this project is to develop an Explainable Artificial Intelligence (XAI) system that improves transparency and trust in digital marketing and fraud detection. The focus is on analyzing biases in social media sentiment, providing clear and interpretable insights into how AI makes decisions.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white p-6 rounded-xl shadow-md">
+                    <h3 className="text-xl font-semibold text-fraudbuster-darkBlue border-b pb-2 border-fraudbuster-purple/30 mb-4">
+                      Dissertation Title
+                    </h3>
+                    <p className="italic text-gray-700 font-medium">
+                      "FraudBuster: Developing an Explainable AI Model for Detecting Bias in Social Media Sentiment Analysis"
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
-          {/* Our Mission */}
+          {/* Our Mission - Keeping this section */}
           <div className="bg-fraudbuster-blue/10 rounded-2xl p-8 mb-20">
             <h2 className="text-2xl font-bold mb-6 text-center text-fraudbuster-darkBlue">Our Mission</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -73,65 +134,7 @@ const About = () => {
             </div>
           </div>
           
-          {/* Our Team */}
-          <div className="mb-20">
-            <h2 className="text-2xl font-bold mb-8 text-center text-fraudbuster-darkBlue">Our Leadership Team</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="p-6 text-center">
-                  <div className="w-24 h-24 bg-fraudbuster-blue rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">JD</span>
-                  </div>
-                  <h3 className="font-bold text-lg text-fraudbuster-darkBlue">Jane Doe</h3>
-                  <p className="text-gray-500 mb-2">CEO & Co-Founder</p>
-                  <p className="text-sm text-gray-600">
-                    Former AI research lead at Tech University with 15 years in cybersecurity.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="p-6 text-center">
-                  <div className="w-24 h-24 bg-fraudbuster-purple rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">JS</span>
-                  </div>
-                  <h3 className="font-bold text-lg text-fraudbuster-darkBlue">John Smith</h3>
-                  <p className="text-gray-500 mb-2">CTO & Co-Founder</p>
-                  <p className="text-sm text-gray-600">
-                    Machine learning expert with previous experience at major fintech companies.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="p-6 text-center">
-                  <div className="w-24 h-24 bg-fraudbuster-pink rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">SC</span>
-                  </div>
-                  <h3 className="font-bold text-lg text-fraudbuster-darkBlue">Sarah Chen</h3>
-                  <p className="text-gray-500 mb-2">Head of Product</p>
-                  <p className="text-sm text-gray-600">
-                    Product visionary with expertise in UX design and customer-focused solutions.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="p-6 text-center">
-                  <div className="w-24 h-24 bg-blue-400 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">MJ</span>
-                  </div>
-                  <h3 className="font-bold text-lg text-fraudbuster-darkBlue">Michael Johnson</h3>
-                  <p className="text-gray-500 mb-2">Chief Security Officer</p>
-                  <p className="text-sm text-gray-600">
-                    Cybersecurity specialist with background in banking security infrastructure.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Our Values */}
+          {/* Our Values - Keeping this section */}
           <div className="bg-white rounded-xl shadow-md p-8 mb-20">
             <h2 className="text-2xl font-bold mb-6 text-center text-fraudbuster-darkBlue">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -184,54 +187,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          
-          {/* University Project Section */}
-          <section className="container mx-auto py-12 bg-gray-50 rounded-xl shadow-md">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold mb-6 text-center text-fraudbuster-darkBlue">
-                About This Project
-              </h2>
-              
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Calendar className="w-6 h-6 text-fraudbuster-blue" />
-                    <p className="text-gray-700"><strong>Submitted:</strong> February 2025</p>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <GraduationCap className="w-6 h-6 text-fraudbuster-purple" />
-                    <p className="text-gray-700"><strong>Degree:</strong> BSc (Hons) Software Engineering</p>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <University className="w-6 h-6 text-fraudbuster-pink" />
-                    <p className="text-gray-700"><strong>University:</strong> University of Westminster</p>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <Users className="w-6 h-6 text-blue-500" />
-                    <p className="text-gray-700">
-                      <strong>In Collaboration With:</strong> Informatics Institute of Technology (IIT)
-                    </p>
-                  </div>
-                </div>
-                
-                <div>
-                  <p className="text-gray-600 mb-4">
-                    The aim of this project is to develop an Explainable Artificial Intelligence (XAI) system that improves transparency and trust in digital marketing and fraud detection. The focus is on analyzing biases in social media sentiment, providing clear and interpretable insights into how AI makes decisions.
-                  </p>
-                  
-                  <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                    <h3 className="font-bold mb-2 text-fraudbuster-darkBlue">Dissertation Title</h3>
-                    <p className="italic text-gray-700">
-                      "FraudBuster: Developing an Explainable AI Model for Detecting Bias in Social Media Sentiment Analysis"
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </section>
       </main>
 
